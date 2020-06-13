@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Delver Lens - EBay</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="icon" type="image/png" href="delver.png"/>
+</head>
+<body>
+
+<div class="jumbotron h-100 w-100 text-center bg-dark text-white">
+    <img class="img-fluid" src="delver.png"/>
+    <div class="container-fluid" id="msg"/>
+</div>
+
+<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script>
+    const url = new URL(window.location.href);
+    const code = url.searchParams.get('code');
+    const success = url.searchParams.get('isAuthSuccessful');
+    if (success)
+        window.location.href = 'intent://ebay-auth: ' + code +
+            '/#Intent;scheme=delverlens;package=com.delverslab.delverlens;end';
+    else
+        $('#msg').html('<h1>EBay authorization failed</h1><br>' +
+            '<h2>Please try again<br>' +
+            'or contact me at <a href="mailto:support@delverlab.com?subject=EBay Authentication" class="text-white font-weight-bold">support@delverlab.com</a></h2>');
+</script>
+</body>
+</html>
