@@ -18,11 +18,13 @@
 <script>
     const url = new URL(window.location.href);
     const code = url.searchParams.get('code');
-    const success = url.searchParams.get('isAuthSuccessful');
-    if (success)
+    if (code !== null) {
+        $('#msg').html('<h1>EBay authorization confirmed</h1><br>' +
+            '<h2>You can close this window now<br>' +
+            'Contact me at <a href="mailto:support@delverlab.com?subject=EBay Authentication" class="text-white font-weight-bold">support@delverlab.com</a> if you find any issues</h2>');
         window.location.href = 'intent://ebay-auth: ' + code +
             '/#Intent;scheme=delverlens;package=com.delverslab.delverlens;end';
-    else
+    } else
         $('#msg').html('<h1>EBay authorization failed</h1><br>' +
             '<h2>Please try again<br>' +
             'or contact me at <a href="mailto:support@delverlab.com?subject=EBay Authentication" class="text-white font-weight-bold">support@delverlab.com</a></h2>');
