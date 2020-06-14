@@ -22,8 +22,7 @@
         $('#msg').html('<h2>EBay authorization confirmed</h2><br>' +
             '<h5>You may close this window now<br>' +
             'Contact me at <a href="mailto:support@delverlab.com?subject=EBay Authentication" class="text-white font-weight-bold">support@delverlab.com</a> if you find any issues</h5>');
-        window.location.href = 'intent://ebay-auth: ' + code +
-            '/#Intent;scheme=delverlens;package=com.delverslab.delverlens;end';
+        window.location.href = 'intent://' + code + '#Intent;scheme=delverlens;action=ebayauth;end';
     } else
         $('#msg').html('<h2>EBay authorization failed</h2><br>' +
             '<h5>Please try again<br>' +
