@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="css/google_fonts.css" type="text/css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-
-
 <body>
 
 <!-- Navbar -->
-<nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-primary shadow">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary shadow">
     <!-- Container wrapper -->
     <div class="container-fluid">
         <!-- Toggle button -->
@@ -36,20 +34,41 @@
             <!-- Left links -->
             <ul class="navbar-nav ml-auto mr-auto text-bold">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#download">Download</a>
+                    <a class="nav-link active" href="#download">DOWNLOAD</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#features">Features</a>
+                    <a class="nav-link active" href="#features">FEATURES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#how-works">How It Works</a>
+                    <a class="nav-link active" href="#media">MEDIA</a>
+                </li>
+                <!-- Tutorial Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="navbarDropdownMenuLink"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-expanded="false">
+                        TUTORIALS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item d-flex align-items-center" href="#scanning-cards">SCANNING CARDS</a>
+                        </li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#exporting">EXPORTING TO SITES</a>
+                        </li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#buysell">BUYING AND SELLING
+                            CARDS</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#buysell">TRANSFER FROM OLD TO NEW
+                            DELVER</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="mailto:contact@delverlab.com"><i class="fas fa-envelope"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="https://www.facebook.com/delverlens">
-                        <i class="fab fa-facebook-f"></i></i></a>
+                        <i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="https://www.twitter.com/delverslab">
@@ -64,21 +83,27 @@
 </nav>
 <!-- Navbar -->
 
-<!-- Download -->
-<section id="announcement">
-        <div class="row d-flex justify-content-center" style="margin-top: 65pt">
-            <a class="btn btn-lg text-white"
-               href="https://twitter.com/delverslab/status/1331741485113303041"
-               style="background-color: #EF6C00">Note about Wizards Trademark claim
-            </a>
-        </div>
-</section>
+<!-- Announcement -->
+<div class="container d-flex justify-content-center">
+    <a class="btn w-100"
+       href="https://twitter.com/delverslab/status/1331741485113303041">Note about Wizards Trademark claim
+    </a>
+</div>
 
 <!-- Download -->
 <section id="download">
     <div class="container">
         <div class="row py-5 d-flex justify-content-center">
             <div class="col-8 py-5 text-center">
+                <div class="row mb-4">
+                    <span class="text-white">
+                        Delver Lens (DL) is a scanner for Magic the Gathering cards designed to organize your collection.
+                        <br>
+                        You can use DL to point your phone's camera to cards and quickly get a list of all the cards you own.
+                        <br>
+                        You can also check card prices, build decks, buy and sell cards.
+                    </span>
+                </div>
                 <div class="row">
                     <iframe class="img-fluid rounded"
                             style="width: 100%; height: 400pt"
@@ -90,12 +115,12 @@
                     <div class="col">
                         <a class="btn btn-lg px-4 text-white"
                            href="https://play.google.com/store/apps/details?id=delverlab.delverlens"
-                           style="background-color: #EF6C00"><i class="fab fa-google-play mr-3 text-white"></i>United
+                           style="background-color: #F57C00"><i class="fab fa-google-play mr-3 text-white"></i>United
                             States
                         </a>
                         <a class="btn btn-lg px-4 text-white"
                            href="https://play.google.com/store/apps/details?id=delverslab.delverlens"
-                           style="background-color: #EF6C00"><i class="fab fa-google-play mr-3 text-white"></i>Not
+                           style="background-color: #F57C00"><i class="fab fa-google-play mr-3 text-white"></i>Not
                             United States
                         </a>
                         <h5 class="mt-2 text-white">Android only at the moment<br>No
@@ -108,87 +133,272 @@
     </div>
 </section>
 
-<!-- Download -->
+<!-- Features -->
 <section id="features" class="p-4">
-    <div class="container">
-        <h4 class="text-center text-white font-weight-bold mb-4">Features</h4>
+    <div class="container lightbox">
+        <h4 class="text-center text-white font-weight-bold mb-4">FEATURES</h4>
         <div class="row d-flex justify-content-center">
             <div class="col-3">
-                <div class="card m-2" style="transform: rotate(-5deg)">
+                <div class="card m-2" style="transform: rotate(0deg)">
                     <img data-toggle="animation"
                          data-animation-start="onScroll"
                          data-animation="fade-in"
-                         src="img/1.png" class="img-fluid shadow" alt="fast scan"/>
+                         src="img/1.png" class="img-fluid shadow rounded" alt="Fast Scan"/>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card m-2" style="transform: rotate(8deg)">
+                <div class="card m-2" style="transform: rotate(0deg)">
                     <img data-toggle="animation"
                          data-animation-start="onScroll"
                          data-animation="fade-in"
-                         src="img/2.png" class="img-fluid shadow" alt="fast scan"/>
+                         src="img/2.png" class="img-fluid shadow rounded" alt="Collection Manager"/>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card m-2" style="transform: rotate(-8deg)">
+                <div class="card m-2" style="transform: rotate(0deg)">
                     <img data-toggle="animation"
                          data-animation-start="onScroll"
                          data-animation="fade-in"
-                         src="img/3.png" class="img-fluid shadow" alt="fast scan"/>
+                         src="img/3.png" class="img-fluid shadow rounded" alt="Flexible Exports"/>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <div class="card m-2" style="transform: rotate(-5deg)">
+                <div class="card m-2" style="transform: rotate(0deg)">
                     <img data-toggle="animation"
                          data-animation-start="onScroll"
                          data-animation="fade-in"
-                         src="img/4.png" class="img-fluid shadow" alt="fast scan"/>
+                         src="img/4.png" class="img-fluid shadow rounded" alt="Single Bar Search"/>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card m-2" style="transform: rotate(-8deg)">
+                <div class="card m-2" style="transform: rotate(0deg)">
                     <img data-toggle="animation"
                          data-animation-start="onScroll"
                          data-animation="fade-in"
-                         src="img/5.png" class="img-fluid shadow" alt="fast scan"/>
+                         src="img/5.png" class="img-fluid shadow rounded" alt="Comprehensive Statistics"/>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card m-2" style="transform: rotate(8deg)">
+                <div class="card m-2" style="transform: rotate(0deg)">
                     <img data-toggle="animation"
                          data-animation-start="onScroll"
                          data-animation="fade-in"
-                         src="img/6.png" class="img-fluid shadow" alt="fast scan"/>
+                         src="img/6.png" class="img-fluid shadow rounded" alt="Sample Hands"/>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card m-2" style="transform: rotate(-3deg)">
+                <div class="card m-2" style="transform: rotate(0deg)">
                     <img data-toggle="animation"
                          data-animation-start="onScroll"
                          data-animation="fade-in"
-                         src="img/7.png" class="img-fluid shadow" alt="fast scan"/>
+                         src="img/7.png" class="img-fluid shadow rounded" alt="Collection Showcase"/>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- How It Works -->
-<section id="how-works" class="p-4">
-    <div class="container">
-        <h4 class="text-center text-white font-weight-bold mb-4">How It Works</h4>
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 text-center">
-                <div class="row">
-                    <iframe class="img-fluid rounded"
-                            style="width: 100%; height: 560pt"
-                            src="https://www.youtube.com/embed/nmBk2bwTrOo"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
+<!-- Download -->
+<section id="media" class="p-4">
+    <h4 class="text-center font-weight-bold text-white mb-4">MEDIA</h4>
+    <div class="d-flex justify-content-center">
+        <!-- Scanning Cards -->
+        <div class="card delver-tutorial-card">
+            <div class="card-body">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="row"><a href="https://lifehacker.com/">Life Hacker</a></th>
+                        <td>
+                            <a href="https://lifehacker.com/organize-your-trading-card-game-collections-with-these-1832407217">
+                                Organize Your Trading Card Game Collections with These Apps</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="https://cardkingdom.com/">Card Kingdom</a></th>
+                        <td>
+                            <a href="https://blog.cardkingdom.com/top-tools-for-new-mtg-players/">
+                                Top Tools for New MTG Players</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="https://www.androidauthority.com/">Android Authority</a></th>
+                        <td>
+                            <a href="https://www.androidauthority.com/best-magic-the-gathering-apps-android-1050034/">
+                                10 best Magic The Gathering apps for Android!</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="https://techcrunch.com/">Tech Crunch</a></th>
+                        <td>
+                            <a href="https://techcrunch.com/2019/02/28/this-robot-automatically-sorts-and-prices-cards-from-magic-the-gathering/">
+                                This robot automatically sorts and prices cards from Magic: The Gathering</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="http://smartsenselab.dcc.ufmg.br/">Smart Sense Lab</a></th>
+                        <td>
+                            <a href="http://smartsenselab.dcc.ufmg.br/en/2019/04/17/company-co-founded-by-former-sense-member-develops-a-robot-for-automatic-sorting-of-cards-from-magic/">
+                                Company co-founded by former Sense member develops a robot for automatic sorting of cards from Magic</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <small>Did I miss one? Please let me know so I can added it here.</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tutorials -->
+<section id="tutorials" class="p-4">
+    <h4 class="text-center font-weight-bold text-white mb-4">TUTORIALS</h4>
+    <div class="d-flex flex-column align-items-center">
+        <!-- Scanning Cards -->
+        <div class="card delver-tutorial-card">
+            <div class="card-header">
+                <h5 class="text-center">SCANNING CARDS</h5>
+            </div>
+            <div class="card-body">
+                <section id="scanning-cards">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 text-center mb-2">
+                                <div class="row">
+                                    <iframe class="img-fluid rounded"
+                                            style="width: 600pt; height: 320pt"
+                                            src="https://www.youtube.com/embed/nmBk2bwTrOo"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" style="text-align: justify">
+                                <ul>
+                                    <li>Shows how to get the best condition for scanning cards.</li>
+                                    <li>No glare, no shadows, good lighting, and high contrast between card and surface
+                                        are the most important factors.
+                                    </li>
+                                    <li>Understanding when the recognition performs best, you can better handle
+                                        recognition in challenging situations like when scanning a binder on-the-wild.
+                                    </li>
+                                </ul>
+                                <div class="d-flex align-items-center">
+                                    Have questions? Send me an email&nbsp;<a href="mailto:contact@delverlab.com"><i
+                                        class="fas fa-envelope fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Exporting -->
+        <div class="card m-2 delver-tutorial-card">
+            <div class="card-header">
+                <h5 class="text-center">EXPORTING TO SITES</h5>
+            </div>
+            <div class="card-body">
+                <section id="exporting">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 text-center mb-2">
+                                <div class="row">
+                                    <iframe class="img-fluid rounded"
+                                            style="width: 600pt; height: 320pt"
+                                            src="https://www.youtube.com/embed/u66F3oAzHTE"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center" style="text-align: justify">
+                                <ul>
+                                    <li>Shows how to send scanned cards to different websites.</li>
+                                    <li>Different websites may have slightly different card and set names. You'll likely
+                                        need to adjust some names manually.
+                                    </li>
+                                    <li>Can also generate CSV files compatible with Microsoft Excel.</li>
+                                </ul>
+                                <div class="d-flex align-items-center">
+                                    Have questions? Send me an email&nbsp;<a href="mailto:contact@delverlab.com"><i
+                                        class="fas fa-envelope fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Buying / Selling -->
+        <div class="card m-2 delver-tutorial-card">
+            <div class="card-header">
+                <h5 class="text-center">BUYING AND SELLING CARDS</h5>
+            </div>
+            <div class="card-body">
+                <section id="buysell">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 text-center mb-2">
+                                <div class="row">
+                                    <iframe class="img-fluid rounded"
+                                            style="width: 600pt; height: 320pt"
+                                            src="https://www.youtube.com/embed/oMdZiCpxugA"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center" style="text-align: justify">
+                                <ul>
+                                    <li>Shows how to send scanned cards to different websites.</li>
+                                    <li>Different websites may have slightly different card and set names. You'll likely
+                                        need to adjust some names manually.
+                                    </li>
+                                    <li>Can also generate CSV files compatible with Microsoft Excel.</li>
+                                </ul>
+                                <div class="d-flex align-items-center">
+                                    Have questions? Send me an email&nbsp;<a href="mailto:contact@delverlab.com"><i
+                                        class="fas fa-envelope fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Transfer Collection -->
+        <div class="card m-2 delver-tutorial-card">
+            <div class="card-header">
+                <h5 class="text-center">TRANSFER FROM OLD TO NEW DELVER</h5>
+            </div>
+            <div class="card-body">
+                <section id="transfer">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 text-center mb-2">
+                                <div class="row">
+                                    <iframe class="img-fluid rounded"
+                                            style="width: 600pt; height: 320pt"
+                                            src="https://drive.google.com/file/d/1CtpRWnHE8RRkko8Pa0GAmeWNpyUY34Jb/preview"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center" style="text-align: justify">
+                                <ul>
+                                    <li>Shows how transfer your collection from the old to the new Delver.
+                                    </li>
+                                    <li>The new Delver version is temporarily named "Delver Lens N".</li>
+                                    <li>This tutorial is only useful if you installed Delver before January 15, 2021.
+                                    </li>
+                                </ul>
+                                <div class="d-flex align-items-center">
+                                    Have questions? Send me an email&nbsp;<a href="mailto:contact@delverlab.com"><i
+                                        class="fas fa-envelope fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
