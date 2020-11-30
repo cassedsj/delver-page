@@ -35,12 +35,7 @@ html {
     /* background by SVGBackgrounds.com */
 }
 
-.delver-tutorial-card {
-    min-width: 800pt;
-}
-
 .dropdown-item {
     font-size: large;
-    min-width: 400pt;
     min-height: 60pt;
 }
