@@ -25583,12 +25583,13 @@ select.select-initialized {
 }
 
 html {
-  font-size: large;
+  font-size: medium;
 }
 
 .nav-item {
-  padding-left: 16pt;
-  padding-right: 16pt;
+  padding-left: 4pt;
+  padding-right: 4pt;
+  font-weight: bold;
 }
 
 #download {
@@ -25613,6 +25614,10 @@ html {
 
 #changelog {
   background-color: #0d47a1;
+}
+
+#privacy-policy {
+  background-color: #212121;
 }
 
 .dropdown-item {
